@@ -1,0 +1,251 @@
+
+
+.container {
+	text-align:center;
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	
+}
+ body {
+	
+	font-family: Verdana, sans-serif;
+	font-size: 15px; 
+}
+
+h1{
+text-align="center";
+}
+
+/*  Estil menu  */
+
+/* Comentaris:
+El menú l'he fet amb una llista mitjançant la propietat del display felx, l'aparença del menú és horitzontal. 
+També he utilitzat la propietat hover per canviar el color del menú al passar el ratolí per sobre. 
+Mentres estas dintre d'una pàgina, es veu reflectit el color en el menú. 
+*/
+.menuCSS {
+	width: 1200px;
+	height: 100px;
+	margin: 0 auto;
+	
+}
+
+.menuCSS ul {
+		display: flex;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		text-align: center;
+		justify-content: center;
+		background-color: #373737;
+	max-width: 1200px;
+	margin: 0 auto;
+	}
+	.menuCSS a {
+		display: block;
+		padding: 2em;
+		background-color: #373737;
+		text-decoration: none;
+		color: #FFFFFF;
+		
+		
+	}
+	.menuCSS a:hover {
+		background-color: #373737;
+		text-decoration: none;
+		color: #F39A53;
+		
+	}
+	.menuCSS ul li ul {
+		display: none;
+	}
+	.menuCSS ul li a:hover + ul, .menuCSS ul li ul:hover {
+		display: block;
+		position: absolute;
+		z-index:200;
+		
+	}
+.actiu a {
+		display: block;
+		padding:2em;
+		background-color: #373737;
+		text-decoration: none;
+		color: #f39a53;
+		}
+	
+.noactiu a {
+		display: block;
+		padding:2em;
+		background-color: #373737;
+		text-decoration: none;
+		color: #ffffff;
+		}
+		
+		
+/*  Formulari de contacte  */
+
+/*  Comentaris: 
+Les diferents dades demenades en el formulari estan enmarcades en un requadre, he fet
+servir la propietat border-radius per arrodonir-ne les puntes. He intentat mantenir una estètica i 
+els colors corporatius de la web. 
+*/
+form {
+	
+	text-align:left;
+	margin: 2em auto;
+	width: 60%;
+	height:60%;
+	
+}
+
+
+
+
+form fieldset {
+	width:80%;
+	padding: 1em;
+	border-radius: 6px;
+	border: 1px solid #f39a53;
+	margin: 1em auto;
+	
+}
+	
+}
+
+form legend {
+	
+	font-weight: bold;
+	color: #2a6694;
+	font-size: 1.1em;
+	padding: 0.5em;
+	
+}
+	
+	
+
+form ul {
+	list-style-type: none;	
+	width: 100%;
+}
+
+form ul li {
+	margin-bottom: 16px;
+	
+}
+
+form label {
+	display: block;
+	padding-bottom: 10px;
+	
+}
+
+
+form input {
+	border-radius: 6px;
+	background-color: #F3F3F3;
+	border: 0px;
+	padding: 10px;
+	font-size: 0.8em;
+	
+}
+
+form input {
+	width: 85%;
+	
+}
+
+
+form select {
+	width: 88%;
+	border-radius: 6px;
+	background-color: #F3F3F3;
+	border: 0px;
+	padding: 10px;
+	font-size: 0.8em;
+	
+	
+	
+}
+
+form input:focus {
+	background: transparent;
+	border-bottom: 1px solid #2a6694;
+}
+
+form textarea:focus {
+	background: transparent;
+	border-bottom: 1px solid #2a6694;
+}
+
+/* He fet que tots els camps siguin obligatòris i no es pugui enviar el formulari sense haver-los completat
+i he creat aquest estil per aquest camp.  */ 
+
+span.required {
+	font-size: 0.5em;
+	padding-left: 0.7em;
+	color: #f39a53;
+}
+
+form input[type="number"] {
+	width: 20%;
+}
+
+form input[type="submit"] {
+	background-color: #f39a53;
+	width: auto;
+	color: #ffffff;
+	font-size: 1em;
+	/* font-weight: bold; */
+	padding: 0.5em 1.5em;
+	margin: 1em auto;
+	cursor:pointer;
+	display: block;
+	border-radius: 1;
+}
+
+.sexe 
+{
+	width:80%;
+	padding: 1em;
+	border-radius: 6px;
+	border: 1px solid #f39a53;
+	margin-right: 5em;
+}
+
+/*  Peu de pàgina  */
+
+footer {
+	height: 130px;
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 3em;
+	padding: 0.4em 0em 1em 0em;
+	text-align: center;
+	background-color: #CFCFCF;
+	color: #fff;	
+	clear: left;
+}
+
+footer p {
+	font-size: 1em;
+	letter-spacing: 1px;
+	color: #373737;
+}
+
+footer a {
+	color: #ff90ff;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: #f4d9f4;
+	text-decoration: none;
+}
+
+.xarxes img {
+	
+	width: 30px;
+	height: 30px;
+	border: none;
+}
