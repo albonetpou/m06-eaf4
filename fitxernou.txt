@@ -1,1 +1,2 @@
 Aquesta és la primera línia del fitxer nou.
+Aquesta és la segona línia del fitxer nou.
